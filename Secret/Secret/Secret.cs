@@ -76,6 +76,7 @@ namespace Secret
                         // starting jIndex from iIndex thus elimintating repetitive combinations
                         for (int jIndex = iIndex; jIndex < primes.Count; jIndex++)
                         {
+                            //to see non repetitive pairs of prime numbers uncomment below line of code
                             //Console.WriteLine(primes[iIndex]+","+primes[jIndex]);
                             if (secret(primes[iIndex] + primes[jIndex]) != secret(primes[iIndex]) + secret(primes[jIndex]))
                                 return false;
